@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+
+/*/NAVIGATION/*/
+
+nav {
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+}
+
+.active1 {
+    color: #F1A20B;
+}
+
+/*/BODY/*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+a:hover {
+    color: #F1A20B;
+    transition: ease-in-out 0.5s;
+}
+
+/* BOXES */
+
+.box2 {
+    margin-top: 5em;
+}
+
+.box3 {
+    margin-top: 5em;
+    border-top-style: solid;
+    border-top-color: #F1A20B;
+    border-width: 1px;
+}
+
+.box4 {
+    margin-top: 5em;
+    border-top-style: solid;
+    border-top-color: #F1A20B;
+    border-width: 1px;
+}
+
+.box5 {
+    margin-top: 5em;
+    border-top-style: solid;
+    border-top-color: #F1A20B;
+    border-width: 1px;
+}
+
+/* TEXT */
+
+h1 {
+    color: black;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px
+}
+
+h2 {
+    color: black;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    padding: 50px 5px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    color: #F1A20B;
+    font-family: 'Lato', sans-serif;
+}
+
+.link2 {
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #F1A20B;
+    font-family: 'Lato', sans-serif;
+    padding: 2em;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.szymborska p{
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+
+/* COLLAPSIBLE BUTTON*/
+
+.collapsible {
+    background-color: #777;
+    color: black;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+    padding: 30px;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+button {
+    padding-top: 20px;
+}
+
+/*/ THEMES /*/
+
+.res {
+    width: 100%;
+}
+
+.res2 {
+    width: 60%;
+    padding: 5px;
+}
+
+.res3 {
+    width: 50%;
+    padding: 5px;
+}
+
+.about {
+    width: 90%;
+    margin-top: 1em;
+}
+
+/*/ FOOTER /*/
+
+footer {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.foot p {
+    border-top: solid 1px #F1A20B;
+    text-align: center;
+    padding: 1em;
+}
+
+
+/*/TABLET/*/
+
+@media all and (min-width: 550px) {
+
+    nav a {
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    nav {
+        position: fixed;
+        height: 70px;
+        background: white;
+        top: 0;
+        margin-bottom: 15em;
+    }
+
+    .res2 {
+        width: 40%;
+        height: auto;
+    }
+
+    .about {
+        margin-top: 4em;
+        width: 60%;
+    }
+
+}
+
+/*/DESKTOP/*/
+
+@media all and (min-width: 1028px) {
+    nav a {
+        display: inline-block;
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    nav {
+        position: fixed;
+        height: 70px;
+        background: white;
+        top: 0;
+        margin-bottom: 15em;
+    }
+
+    p {
+        margin-left: 12em;
+        margin-right: 12em;
+    }
+
+    .res {
+        width: 90%;
+    }
+
+    .res2 {
+        width: 20%;
+        height: auto;
+    }
+
+    .collapsible {
+        width: 50%;
+    }
+
+    .about {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .box2 {
+        margin-top: 10em;
+    }
+}
